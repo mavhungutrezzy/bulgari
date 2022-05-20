@@ -4,12 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../components/account_text.dart';
-import '../../../components/email_input.dart';
-import '../../../components/main_text.dart';
-import '../../../components/password_input.dart';
-import '../../../components/signin_signup.dart';
-import '../../../components/small_text.dart';
+
+import '../../../components/barrel.dart';
 import 'third_party_login.dart';
 
 
