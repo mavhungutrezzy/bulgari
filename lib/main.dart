@@ -3,7 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'package:bulgari/screens/splash_screen/splash_screen.dart';
+import 'screens/01_splash_screen/splash_screen.dart';
+
 
 
 void main() {

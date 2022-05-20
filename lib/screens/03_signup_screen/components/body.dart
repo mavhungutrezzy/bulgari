@@ -1,12 +1,11 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers
+// ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 
 import '../../../components/barrel.dart';
-import 'third_party_login.dart';
+import 'name_input.dart';
 
 
 class Body extends StatelessWidget {
@@ -22,7 +21,7 @@ class Body extends StatelessWidget {
             children: [
               Padding(
                 padding: EdgeInsets.only(
-                  top: 68.0.h,
+                  top: 111.0.h,
                   left: 151.0.w,
                   right: 151.0.w,
                   bottom: 16.h,
@@ -34,9 +33,9 @@ class Body extends StatelessWidget {
                   )
                 ),
               ),
-              MainText(text: 'Welcome to Bulgari'),
+              MainText(text: "Let's Get Started"),
               SizedBox(height: 8.0.h,),
-              SmallText(text: 'Sign in to continue'),
+              SmallText(text: 'Create a new account'),
               SizedBox(height: 28.0.h,),
               Expanded(
                 child: SingleChildScrollView(
@@ -47,26 +46,17 @@ class Body extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
+                        FullName(),
+                        SizedBox(height: 8.0.h),
                         Email(),
                         SizedBox(height: 8.0.h),
                         Password(hintText: 'Password'),
-                        SizedBox(height: 16.0.h),
-                        SiginSignup(text: 'Sign in'),
-                        SizedBox(height: 21.0.h,),
-                        orText(),
+                        SizedBox(height: 8.0.h),
+                        Password(hintText: 'Confirm Password'),
                         SizedBox(height: 16.0.h,),
-                        ThirdPartyLogin(logoPath: 'assets/icons/google.png', text: 'Login with Google'),
+                        SigninSignup(text: 'Sign up'),
                         SizedBox(height: 8.0.h,),
-                        ThirdPartyLogin(logoPath: 'assets/icons/facebook.png', text: 'Login with Facebook'),
-                        SizedBox(height: 16.0.h,),
-                        TextButton(
-                          onPressed: () {}, 
-                          child: Text(
-                            'Forgot Password?'
-                          )
-                        ),
-                        SizedBox(height: 8.0.h,),
-                        AccountText(accountText: 'Dont have a account? ',text: 'Register')
+                        AccountText(accountText: 'Have an account? ',text: 'Sign in')
                       ],
                     ),
                   ) 
@@ -78,17 +68,4 @@ class Body extends StatelessWidget {
       ),
     );
   }
-
-  Text orText() {
-    return Text(
-      'OR',
-      style: GoogleFonts.poppins(
-        fontWeight: FontWeight.bold,
-        color: Color(0xff9098B1),
-        fontSize: 13.0.sp
-      )
-    );
-  }
 }
-
-
