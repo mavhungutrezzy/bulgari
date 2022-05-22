@@ -4,3 +4,4 @@ export 'password_input.dart';
 export 'small_text.dart';
 export 'signin_signup.dart';
 export 'main_text.dart';
+export 'promotion_featured_banner.dart';
