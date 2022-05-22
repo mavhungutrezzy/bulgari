@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../screens/03_signup_screen/signup_screen.dart';
+
 class AccountText extends StatelessWidget {
   
   final String accountText;
@@ -29,13 +31,21 @@ class AccountText extends StatelessWidget {
             fontSize: 13.0.sp
           )
         ),
-        Text(
-          text,
-          style: GoogleFonts.poppins(
-            fontWeight: FontWeight.w700,
-            color: Color(0xff40bfff),
-            fontSize: 13.0.sp
-          )
+        GestureDetector(
+          onTap: () {
+            Navigator.push(
+              context, 
+              MaterialPageRoute(builder: (_) => SignupScreen())
+          );
+          },
+          child: Text(
+            text,
+            style: GoogleFonts.poppins(
+              fontWeight: FontWeight.w700,
+              color: Color(0xff40bfff),
+              fontSize: 13.0.sp
+            )
+          ),
         )
       ],
     );

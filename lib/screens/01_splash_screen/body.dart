@@ -2,9 +2,10 @@
 
 import 'dart:async';
 
-import 'package:bulgari/screens/login_screen/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+
+import '../02_login_screen/login_screen.dart';
 
 
 class Body extends StatelessWidget {
