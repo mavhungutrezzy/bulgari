@@ -3,8 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'screens/01_splash_screen/splash_screen.dart';
+import 'routes.dart';
 import 'screens/04_home_screen/home_screen.dart';
+import 'screens/06_product_details_screen/product_details_screen.dart';
+import 'screens/5_promotion_screen/promotion_screen.dart';
 
 
 
@@ -25,11 +27,14 @@ class MyApp extends StatelessWidget {
       builder: (BuildContext context, Widget? child) { 
         return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: child,
+        initialRoute: ProductDetailScreen.routeName,
+        routes: routes
       );
       },
       // child: SplashScreen(),
-      child: HomeScreen(),
+      // child: HomeScreen(),
+      // child: PromotionScreen()
+      
     );
   }
 }

@@ -1,11 +1,16 @@
+import 'package:flutter/material.dart';
+
 
 class Product {
 
   String image;
   String title;
+  List<double> sizes;
   double price;
   double rating;
   String description;
+  List<Color> colors;
+
 
   
 
@@ -15,6 +20,8 @@ class Product {
     required this.price,
     required this.rating,
     required this.description,
+    required this.sizes,
+    required this.colors,
 
   });
 
@@ -29,42 +36,65 @@ List<Product> product = [
     title: 'ADI2000 Shoes', 
     price: 2300.00, 
     rating: 4.8, 
-    description: description
+    description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.red, Colors.green, Colors.blue, Colors.purple, Colors.yellowAccent]
   ),
   Product(
     image: 'assets/images/Adilette Slides.jpg', 
     title: 'Adilette Slides', 
     price: 700.00, 
     rating: 4.8, 
-    description: description
+    description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.red, Colors.green, Colors.blue, Colors.purple, Colors.yellowAccent]
+
+    
+
   ),
   Product(
     image: 'assets/images/DROP STEP XL SHOES.jpg', 
     title: 'DROP STEP XL SHOES', 
     price: 4500.50, 
     rating: 4.8, 
-    description: description
+    description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.red, Colors.green, Colors.blue, Colors.purple, Colors.yellowAccent]
+
+
   ),
   Product(
     image: 'assets/images/EQUIPMENT SUPPORT 93 SHOES.jpg', 
     title: 'EQUIPMENT SUPPORT 93 SHOES', 
     price: 1700.30, 
     rating: 4.8, 
-    description: description
+    description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.brown, Colors.green, Colors.blue, Colors.purple, Colors.yellowAccent]
+
+
   ),
   Product(
     image: 'assets/images/Ghostbusters Instapump Fury Shoes.jpg', 
     title: 'Ghostbusters Instapump Fury Shoes', 
     price: 3000.00, 
     rating: 4.8, 
-    description: description
+    description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.red, Colors.green, Colors.blue, Colors.purple, Colors.yellowAccent]
+
+
   ),
   Product(
     image: 'assets/images/La Casa De Papel Zig Kinetica II Shoes.jpg', 
     title: 'La Casa De Papel Zig Kinetica II Shoes', 
     price: 5000.12, 
     rating: 4.8, 
-    description: description
+    description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.orangeAccent, Colors.green, Colors.blue, Colors.purple, Colors.yellowAccent]
+
+
   ),
   
   Product(
@@ -72,42 +102,66 @@ List<Product> product = [
     title: 'Post UP Shoes', 
     price: 1500.45, 
     rating: 4.8, 
-    description: description
+    description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.red, Colors.green, Colors.blue, Colors.purple, Colors.yellowAccent]
+
+
   ),
   Product(
     image: 'assets/images/question_mid_shoe.jpg', 
     title: 'question_mid_shoe', 
     price: 4500, 
     rating: 4.8, 
-    description: description
+    description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.red, Colors.green, Colors.blue, Colors.purple, Colors.yellowAccent]
+
+
   ),
   Product(
     image: 'assets/images/RETROPY F2 SHOES.jpg', 
     title: 'RETROPY F2 SHOES', 
     price: 2800.45, 
     rating: 4.8, 
-    description: description
+    description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.red, Colors.green, Colors.blue, Colors.purple, Colors.yellowAccent]
+
+
   ),
   Product(
     image: 'assets/images/Rovered Shoes.jpg', 
     title: 'Rovered Shoes', 
     price: 4200.00, 
     rating: 4.8, 
-    description: description
+    description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.red, Colors.green, Colors.blue, Colors.purple, Colors.yellowAccent]
+
+
   ),
   Product(
     image: 'assets/images/TERREX AGRAVIC ULTRA TRAIL RUNNING SHOES.jpg', 
     title: 'TERREX AGRAVIC ULTRA TRAIL RUNNING SHOES', 
     price: 3500.45, 
     rating: 4.8, 
-    description: description
+    description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.red, Colors.green, Colors.blue, Colors.purple, Colors.yellowAccent]
+
+
   ),
   Product(
     image: 'assets/images/X9000L4 SHOES.jpg', 
     title: 'X9000L4 SHOES', 
     price: 2000.45, 
     rating: 4.8, 
-    description: description
+    description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.red, Colors.green, Colors.blue, Colors.purple, Colors.yellowAccent]
+
+
   ),
 
   Product(
@@ -116,6 +170,10 @@ List<Product> product = [
     price: 2548.05,
     rating: 4, 
     description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.pinkAccent, Colors.green, Colors.blue, Colors.purple, Colors.yellowAccent]
+
+
   ),
   Product(
     image: 'assets/images/TERREX AGRAVIC ULTRA TRAIL RUNNING SHOES.jpg', 
@@ -123,6 +181,10 @@ List<Product> product = [
     price: 5885.47,
     rating: 4, 
     description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.red, Colors.green, Colors.blueAccent, Colors.purple, Colors.yellowAccent]
+
+
   ),
   Product(
     image: 'assets/images/Club C  Revenge Shoes.jpg', 
@@ -130,6 +192,10 @@ List<Product> product = [
     price: 1800.00,
     rating: 3.5, 
     description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.red, Colors.greenAccent, Colors.blue, Colors.indigoAccent, Colors.yellowAccent]
+
+
   ),
   Product(
     image: 'assets/images/Bape Instapump Fury OG Shoes.jpg', 
@@ -137,6 +203,10 @@ List<Product> product = [
     price: 2900.00,
     rating: 4, 
     description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.red, Colors.black, Colors.blue, Colors.purple, Colors.yellowAccent]
+
+
   ),
   Product(
     image: 'assets/images/ZX 2K BOOST 2.0 TRAIL SHOES.jpg', 
@@ -144,6 +214,10 @@ List<Product> product = [
     price: 3500.45,
     rating: 4.5, 
     description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.pink, Colors.green, Colors.orange, Colors.purple, Colors.yellowAccent]
+
+
   ),
   Product(
     image: 'assets/images/Reebok Nano X2 Shoes.jpg', 
@@ -151,5 +225,9 @@ List<Product> product = [
     price: 2540.0,
     rating: 4, 
     description: description,
+    sizes: [5, 6, 7.5, 8, 10, 11],
+    colors: [Colors.red, Colors.green, Colors.blue, Colors.purple, Colors.yellowAccent]
+
+
   ),
 ];

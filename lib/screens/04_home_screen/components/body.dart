@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables
 
+import 'package:bulgari/screens/5_promotion_screen/promotion_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -38,7 +39,12 @@ class Body extends StatelessWidget {
                 child: Column(
                   children: [
                     // Widget for Promotion Banners
-                    PromotionFeaturedBanner(image: 'assets/images/Offer Banner (1).png'),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, PromotionScreen.routeName);
+                      },
+                      child: PromotionFeaturedBanner(image: 'assets/images/Offer Banner (1).png')
+                    ),
                     // TODO: Add slideshow image here
                     SizedBox(height: 24.0.h),
                     

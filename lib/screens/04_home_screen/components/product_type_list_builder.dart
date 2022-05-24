@@ -15,7 +15,7 @@ class ProductType extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(left: 16.0.w),
       child: SizedBox(
-        height: 108.h,
+        height: 120.h,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: category.length,
